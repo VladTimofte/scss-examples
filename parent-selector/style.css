@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #414141;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 280px;
+  height: 380px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+}
+.card h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 12px;
+}
+.button:hover {
+  background-color: #1d6fa5;
+}
+.button.culoarea-rosie {
+  color: red;
+}

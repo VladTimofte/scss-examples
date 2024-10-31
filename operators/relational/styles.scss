@@ -1,0 +1,74 @@
+$score: 89;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+
+    .result {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+
+        @if $score >= 90 {
+            background-color: green;
+        } @else if $score >= 75 {
+            background-color: blue;
+        } @else if $score >=50 {
+            background-color: orange;
+        } @else {
+            background-color: red;
+        }
+    }
+}
+
+
+
+
+.legend {
+    margin-top: 20px;
+    font-size: 1.2em;
+
+    p {
+        margin: 5px 0;
+    }
+
+    span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .color-excellent {
+        background-color: green; // Verde
+    }
+    
+    .color-good {
+        background-color: blue; // Albastru
+    }
+
+    .color-satisfactory {
+        background-color: orange; // Portocaliu
+    }
+
+    .color-unsatisfactory {
+        background-color: red; // Roșu
+    }
+}

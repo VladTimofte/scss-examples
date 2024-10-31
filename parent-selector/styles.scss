@@ -1,0 +1,59 @@
+// Variabile
+$card-width: 280px;
+$card-height: 380px;
+$card-bg: #ffffff;
+$border-radius: 12px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+$title-color: #333;
+$text-color: #555;
+$button-bg: #3498db;
+$button-hover-bg: #1d6fa5;
+$button-color: #fff;
+
+// Stiluri globale
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #414141;
+  font-family: Arial, sans-serif;
+}
+
+// Card de bază
+.card {
+  width: $card-width;
+  height: $card-height;
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+
+  h2 {
+    color: $title-color;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.button {
+    padding: 12px 20px;
+    background-color: $button-bg;
+    color: $button-color;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: $button-hover-bg;
+    }
+}

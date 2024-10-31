@@ -1,0 +1,20 @@
+@mixin button-style-any($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.364);
+    margin: 20px;
+}
+
+.button-1 {
+    @include button-style-any(green, black)
+}
+
+.button-2 {
+    @include button-style-any(blue, white)
+}
+
+.button-3 {
+    @include button-style-any(yellow, blue)
+}

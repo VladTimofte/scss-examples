@@ -1,0 +1,23 @@
+$base-size: 50px;
+$size-increment: 30px;
+
+.box {
+    color: white;
+    &.small {
+        width: $base-size;
+        height: $base-size;
+        background-color: green;
+    }
+
+    &.medium {
+        width: $base-size + $size-increment; // 50px + 50px = 100px
+        height: $base-size + $size-increment;// 50px + 50px = 100px
+        background-color: blue;
+    }
+
+    &.large {
+        width: $base-size + ($size-increment * 2); // 50px + 60px = 110px
+        height: $base-size + ($size-increment * 2); // 50px + 60px = 110px
+        background-color: red;
+    }
+}

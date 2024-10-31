@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222222;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.result {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.result.adult {
+  background-color: green;
+}
+.result.minor {
+  background-color: red;
+}

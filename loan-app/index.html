@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator</title>
+  <link id="stylesheetID" rel="stylesheet" href="light-mode.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <button onclick="changeDarkLightMode()" id="darkLightMode">Dark mode / Light Mode</button>
+    <h1>Loan Calculator</h1>
+    <div class="calculator">
+      <label>
+        Loan Amount
+        <input type="number" id="loan-amount" placeholder="Enter amount">
+      </label>
+      <label>
+        Interest Rate (%)
+        <input type="number" id="interest-rate" placeholder="Annual interest rate">
+      </label>
+      <label>
+        Loan Term (years)
+        <input type="number" id="loan-term" placeholder="Years">
+      </label>
+      <button onclick="calculatePayment()">Calculate</button>
+      <div class="result">
+        <h2>Monthly Payment</h2>
+        <p id="monthly-payment">-</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function calculatePayment() {
+      const amount = document.getElementById('loan-amount').value;
+      const interestRate = document.getElementById('interest-rate').value;
+      const term = document.getElementById('loan-term').value;
+
+      const monthlyInterest = interestRate / 100 / 12;
+      const numberOfPayments = term * 12;
+      const numerator = monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments);
+      const denominator = Math.pow(1 + monthlyInterest, numberOfPayments) - 1;
+
+      const monthlyPayment = amount * (numerator / denominator);
+      document.getElementById('monthly-payment').textContent = `${monthlyPayment.toFixed(2)} Euro`;
+    }
+
+    function changeDarkLightMode() {
+        const stylesheet = document.getElementById('stylesheetID')
+        if (stylesheet) {
+            console.log(stylesheet.getAttribute('href'))
+            if (stylesheet.getAttribute('href') === 'light-mode.css') {
+                stylesheet.href = 'dark-mode.css'
+            } else {
+                stylesheet.href = 'light-mode.css'
+            }
+        }
+    }
+  </script>
+</body>
+</html>

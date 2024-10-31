@@ -1,0 +1,50 @@
+$adult-background: green;
+$minor-background: red;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+// Mixin pentru verificarea varstei
+@mixin check-age($age) {
+
+    @if $age < 18 { // Operator de comparatie (comparison operator)
+        background-color: $minor-background;
+    } @else {
+        background-color: $adult-background;
+    }
+
+}
+
+.result {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+
+    &.adult {
+        @include check-age(30)
+    }
+
+    &.minor {
+        @include check-age(17)
+    }
+}
+
+@debug 1px == 1px; // true, egalitate
+@debug 1px != 8px; // true, inegalitate
+@debug 1px != 1px; // false
+
+@debug 100vh > 30vh; // true 
+@debug 100vh < 30vh; // false 
+
+@debug (2px 3px 5px) == (2px 3px 5px); //true
+@debug (2px 3px 100px) != (2px 3px 5px); //true

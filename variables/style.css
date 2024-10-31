@@ -1,0 +1,32 @@
+body {
+  background-color: #222222;
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #6fc8fb;
+}
+
+p {
+  color: #ff0000;
+}
+
+button {
+  background-color: #7cd35c;
+  color: #ff0000;
+  padding: 20px;
+}
+
+button:hover {
+  background-color: #3d893e;
+}

@@ -1,0 +1,26 @@
+.button-1 {
+  background-color: green;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.364);
+  margin: 20px;
+}
+
+.button-2 {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.364);
+  margin: 20px;
+}
+
+.button-3 {
+  background-color: yellow;
+  color: blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.364);
+  margin: 20px;
+}

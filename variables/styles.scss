@@ -1,0 +1,40 @@
+// Variabile
+$primary-color: #6fc8fb;
+$secondary-color: #7cd35c;
+$text-color: #ff0000;
+$hover-color: #3d893e;
+$background-color: #222222;
+$border-radius: 8px;
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+p {
+    color: $text-color
+} 
+
+button {
+    background-color: $secondary-color;
+    color: $text-color;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: $hover-color;
+}

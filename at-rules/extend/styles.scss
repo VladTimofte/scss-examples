@@ -1,0 +1,23 @@
+.button {
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darkblue;
+    }
+}
+
+.primary-button {
+    @extend .button;
+    background-color: green;
+
+    &:hover {
+        background-color: darkgreen;
+    }
+    
+}

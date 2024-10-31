@@ -1,0 +1,19 @@
+.button, .primary-button {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover, .primary-button:hover {
+  background-color: darkblue;
+}
+
+.primary-button {
+  background-color: green;
+}
+.primary-button:hover {
+  background-color: darkgreen;
+}

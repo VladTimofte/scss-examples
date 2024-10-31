@@ -1,0 +1,14 @@
+$first-name: 'John';
+$last-name: 'Doe';
+$greeting: 'Hellooooo, ';
+
+$message: #{$greeting} #{$first-name} #{$last-name};
+
+@debug $message;
+
+$color: 'albastru';
+$shade: 'deschis';
+
+$color-message: 'Culoarea aleasa este #{$color} #{$shade}';
+
+@debug $color-message;

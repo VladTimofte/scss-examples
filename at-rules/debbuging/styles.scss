@@ -1,0 +1,15 @@
+@function set-fonte-size($size) {
+    @if $size < 10px {
+        @error "Dimensiunea este mai mica decat 10!"; 
+    } 
+    @else if $size > 100px {
+        @warn 'Atentie! Dimensiunea este mai mare de 100px.';
+    }
+
+    @debug 'Setarea dimnsiunii este de: #{$size}';
+    @return $size;
+}
+
+body {
+    font-size: set-fonte-size(20px);
+}

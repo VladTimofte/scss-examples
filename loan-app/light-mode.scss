@@ -1,0 +1,97 @@
+// Variabile pentru culori și font
+$bg-color: #f7f9fc;
+$card-bg: #ffffff;
+$text-color: #333333;
+$button-color: #0074d9;
+$input-border: #d1d1d1;
+
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+// Stilizare container calculator
+.calculator-container {
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2em;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+
+// Calculator card
+.calculator {
+  background-color: $card-bg;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  label {
+    display: block;
+    font-size: 1em;
+    color: $text-color;
+    margin-bottom: 10px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid $input-border;
+      outline: none;
+
+      &:focus {
+        border-color: $button-color;
+        box-shadow: 0 0 5px rgba($button-color, 0.2);
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: $button-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #222222
+    }
+  }
+
+  // Rezultat afișare
+  .result {
+    margin-top: 20px;
+    h2 {
+      font-size: 1.5em;
+      color: $text-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: $button-color;
+      font-weight: bold;
+    }
+  }
+}

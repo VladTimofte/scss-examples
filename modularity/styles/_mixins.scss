@@ -1,0 +1,13 @@
+@use 'variables';
+
+@mixin button-styles($bg-color, $txt-color) {
+    background-color: $bg-color;
+    color: $txt-color;
+    padding: variables.$button-padding;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

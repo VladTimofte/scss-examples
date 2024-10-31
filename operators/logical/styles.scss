@@ -1,0 +1,9 @@
+@debug not true; //false
+@debug not false; //true
+
+@debug true and true; //true
+@debug false and false; // false
+
+@debug true or false; // true
+@debug false or false; //false
+@debug false or false or true; //true

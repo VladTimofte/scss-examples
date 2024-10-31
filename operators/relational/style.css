@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222222;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+}
+.box .result {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.legend {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.legend p {
+  margin: 5px 0;
+}
+.legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.legend .color-excellent {
+  background-color: green;
+}
+.legend .color-good {
+  background-color: blue;
+}
+.legend .color-satisfactory {
+  background-color: orange;
+}
+.legend .color-unsatisfactory {
+  background-color: red;
+}
